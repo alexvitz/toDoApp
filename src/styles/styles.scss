@@ -1,0 +1,379 @@
+.appBackground {
+  display: flex;
+}
+
+.welcomeImg {
+  height: 100vh;
+}
+
+.welcomeImgContainer {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  background-color: rgba(200, 191, 255, 0.08);
+}
+
+.welcomeGetStarted {
+  padding: 60px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  text-align: left;
+}
+
+.getStartedBtn {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 40px;
+  background-color: #9373ff;
+  color: white;
+  border-radius: 20px;
+  align-self: center;
+  margin-top: 100px;
+}
+
+.welcomeText {
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: -0.25px;
+  margin-bottom: 16px;
+}
+
+.welcomeSubtitle {
+  color: #cbbeff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  color: white;
+}
+
+.inputBox {
+  width: 300px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+}
+
+.homePageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  width: 100%;
+}
+
+.sidebarContainer {
+  width: 25%;
+  padding: 20px;
+}
+
+.tasksContainer {
+  padding: 20px;
+  width: 75%;
+  background-color: #544794;
+}
+
+.newListBtn {
+  color: #9373ff;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: 0.5s, font-size 0.5s;
+}
+
+.newListBtn:hover {
+  font-size: 20px;
+}
+
+.addTaskBtn {
+  position: fixed;
+  bottom: 20px;
+  width: 73%;
+  text-align: left;
+  padding: 5px 0 5px 20px;
+  border-radius: 20px;
+  background-color: rgba(230, 225, 229, 0.16);
+  border: none;
+  outline: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.addTaskBtn:hover {
+  background-color: rgba(100, 95, 99, 0.5);
+}
+
+.logoutBtn {
+  @extend .addTaskBtn;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+}
+
+.logoutBtn:hover {
+  background-color: rgba(150, 145, 149, 0.5);
+}
+
+.contactLetters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #9373ff;
+  border-radius: 26px;
+  align-self: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: #201f24;
+  margin-right: 10px;
+}
+
+.nameText {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.emailText {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: rgba(230, 225, 229, 0.6);
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0 10px 0;
+  height: 60px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(230, 225, 229, 0.38);
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  background-color: rgba(230, 225, 229, 0.08);
+  color: white;
+}
+
+.searchInput {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  height: 60px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+}
+
+.customInput {
+  @extend .searchInput;
+  background-color: rgba(230, 225, 229, 0.08);
+  border-bottom: 2px solid rgba(230, 225, 229, 0.38);
+  border-radius: 5px 5px 0 0;
+}
+
+.selectedStatus {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #9373ff;
+  border-bottom: 2px solid #9373ff;
+  cursor: pointer;
+}
+
+.unselectedStatus {
+  @extend .selectedStatus;
+  border-bottom: none;
+  color: rgba(230, 225, 229, 0.38);
+}
+
+.ReactModal__Content,
+.ReactModal__Content--after-open {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: fit-content;
+  padding: 24px;
+  border-radius: 28px !important;
+  background-color: #201f24 !important;
+  color: white;
+  left: 35% !important;
+  top: 35% !important;
+  border: none !important;
+}
+
+.ReactModal__Overlay,
+.ReactModal__Overlay--after-open {
+  z-index: 2;
+  background-color: rgba(154, 141, 148, 0.8) !important;
+}
+
+.addListBtn {
+  @extend .getStartedBtn;
+  margin-top: 0;
+  width: 110px;
+  height: 40px;
+  transition: background-color 0.3s;
+  float: right;
+}
+
+.addListBtn:hover {
+  background-color: rgba(150, 145, 149, 0.5);
+}
+
+.selectedList {
+  display: flex;
+  align-items: center;
+  background-color: rgba(200, 191, 255, 0.08);
+  cursor: pointer;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 5px;
+}
+
+.unselectedList {
+  @extend .selectedList;
+  background-color: transparent;
+}
+
+.unselectedList:hover {
+  background-color: rgba(200, 191, 255, 0.08);
+}
+
+.task {
+  display: flex;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #201f24;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  cursor: pointer;
+}
+
+.selectedTask {
+  @extend .task;
+  background-color: rgba(255, 255, 255, 0.38);
+}
+
+.taskTitle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.taskNote {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(230, 225, 229, 0.6);
+}
+
+.task-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: -20%;
+  background-color: #201f24;
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  color: white;
+}
+
+.task-sidebar.open {
+  right: 0;
+  z-index: 1;
+}
+
+.task-header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
+
+.task-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.editTaskInput {
+  width: 100%;
+  color: white;
+  background-color: rgba(230, 225, 229, 0.08);
+  border: none;
+  padding: 10px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  outline: none;
+}
+
+.editTaskNote {
+  @extend .taskNote;
+  height: 150px;
+  background-color: rgba(230, 225, 229, 0.08);
+  outline: none;
+  border: none;
+  padding: 10px;
+}
+
+.deleteBtn {
+  @extend .addListBtn;
+  background-color: #d9415e;
+}
